@@ -3,7 +3,6 @@
 #include <torch/nn/modules/container/any_module_holder.h>
 #include <torch/nn/modules/container/any_value.h>
 #include <torch/nn/pimpl.h>
-#include <torch/nn/cloneable_config.h>
 #include <torch/ordered_dict.h>
 #include <torch/serialize/archive.h>
 #include <torch/types.h>
