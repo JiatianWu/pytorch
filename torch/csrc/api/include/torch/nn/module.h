@@ -114,7 +114,7 @@ class TORCH_API Module : public std::enable_shared_from_this<Module> {
   virtual std::shared_ptr<Module> clone(
       const optional<Device>& device = nullopt) const;
 
-  virtual std::shared_ptr<Module> clone(
+  virtual std::shared_ptr<Module> clone_config(
       const std::vector<int64_t> cfg,
       const optional<Device>& device = nullopt) const;
 

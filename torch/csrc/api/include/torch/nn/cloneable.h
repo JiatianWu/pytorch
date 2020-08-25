@@ -84,7 +84,7 @@ class Cloneable : public virtual Module {
     return copy;
   }
 
-  std::shared_ptr<Module> clone(
+  std::shared_ptr<Module> clone_config(
       const std::vector<int64_t> cfg,
       const optional<Device>& device = nullopt) const override {
     NoGradGuard no_grad;

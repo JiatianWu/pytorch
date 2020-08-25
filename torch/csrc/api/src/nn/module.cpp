@@ -75,8 +75,8 @@ std::shared_ptr<Module> Module::clone(const optional<Device>& device) const {
       "> instead of torch::nn::Module to inherit the ability to clone.");
 }
 
-std::shared_ptr<Module> Module::clone(const std::vector<int64_t> cfg,
-                                      const optional<Device>& device) const {
+std::shared_ptr<Module> Module::clone_config(const std::vector<int64_t> cfg,
+                                             const optional<Device>& device) const {
   AT_ERROR(
       "clone() has not been implemented for ",
       name(),
