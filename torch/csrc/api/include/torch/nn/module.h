@@ -114,6 +114,10 @@ class TORCH_API Module : public std::enable_shared_from_this<Module> {
   virtual std::shared_ptr<Module> clone(
       const optional<Device>& device = nullopt) const;
 
+  virtual std::shared_ptr<Module> clone(
+      const std::vector<int64_t> cfg,
+      const optional<Device>& device = nullopt) const;
+
   /// Applies the `function` to the `Module` and recursively to every submodule.
   /// The function must accept a `Module&`.
   ///
